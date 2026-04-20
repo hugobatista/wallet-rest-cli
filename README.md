@@ -72,9 +72,3 @@ wallet-rest-cli records --token "$WALLET_API_TOKEN" --record-date-from 2025-01-0
 wallet-rest-cli records-by-id --token "$WALLET_API_TOKEN" rec_123 rec_456
 wallet-rest-cli api-usage-stats --token "$WALLET_API_TOKEN" --period 30days
 ```
-
-### Validation
-
-```bash
-./validate.sh
-```
