@@ -1,6 +1,6 @@
 ## wallet-rest-cli
 
-`wallet-rest-cli` is a console CLI for the BudgetBakers Wallet API.
+`wallet-rest-cli` is a console CLI for the BudgetBakers Wallet API. Useful for debugging or provide a CLI for your AI Agents.
 
 Warning: This CLI is unofficial and not affiliated with BudgetBakers. Use at your own risk.
 
