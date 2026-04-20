@@ -1,3 +1,9 @@
+[![PyPI - Version](https://img.shields.io/pypi/v/wallet-rest-cli.svg)](https://pypi.org/project/wallet-rest-cli)
+[![GitHub Tag](https://img.shields.io/github/v/tag/hugobatista/wallet-rest-cli?logo=github&label=latest)](https://go.hugobatista.com/gh/wallet-rest-cli/releases)
+[![GHCR Tag](https://img.shields.io/github/v/tag/hugobatista/wallet-rest-cli?logo=docker&logoColor=white&label=GHCR)](https://go.hugobatista.com/gh/wallet-rest-cli/packages)
+[![Test](https://go.hugobatista.com/gh/wallet-rest-cli/actions/workflows/test.yml/badge.svg)](https://go.hugobatista.com/gh/wallet-rest-cli/actions/workflows/test.yml)
+[![Lint](https://go.hugobatista.com/gh/wallet-rest-cli/actions/workflows/lint.yml/badge.svg)](https://go.hugobatista.com/gh/wallet-rest-cli/actions/workflows/lint.yml)
+
 ## wallet-rest-cli
 
 `wallet-rest-cli` is a console CLI for the BudgetBakers Wallet API. Useful for debugging or provide a CLI for your AI Agents.
