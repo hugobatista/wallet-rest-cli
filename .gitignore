@@ -1,0 +1,35 @@
+
+*/__pycache__/*
+__pycache__
+.mypy_cache
+.pytest_cache
+.ruff_cache
+.coverage
+dist
+build
+.venv
+
+
+# Logs
+logs
+*.log
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+.env
+app.db
+
+
