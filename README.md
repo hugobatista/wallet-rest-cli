@@ -50,7 +50,7 @@ docker run --rm \
 You can also use the image published to GHCR:
 
 ```bash
-docker pull ghcr.io/<owner>/wallet-rest-cli:latest
+docker pull ghcr.io/hugobatista/wallet-rest-cli:latest
 docker run --rm \
   -e WALLET_API_TOKEN="$WALLET_API_TOKEN" \
   ghcr.io/hugobatista/wallet-rest-cli:latest --help
