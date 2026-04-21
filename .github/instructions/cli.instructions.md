@@ -2,6 +2,11 @@
 description: 'CLI coding conventions for the project.'
 ---
 
+## Project structure, frameworks and libraries
+- if implementing a CLI, use typer as the framework. Typer is a modern and easy-to-use library that allows you to create powerful CLI applications with minimal code.  always #fetch latest documentation from https://typer.tiangolo.com/
+
+
+
 # Docker
 - if implementing a CLI, make sure to provide a Dockerfile for easy deployment and usage. The Dockerfile should include instructions for building the CLI application and installing any necessary dependencies. This will allow users to run the CLI in a containerized environment without having to worry about setting up the environment or installing dependencies manually.
 

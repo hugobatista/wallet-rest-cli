@@ -6,8 +6,7 @@ applyTo: '**/*.py'
 # Python Coding Conventions
 
 ## Project structure, frameworks and libraries
-- if implementing a CLI, use typer as the framework. Typer is a modern and easy-to-use library that allows you to create powerful CLI applications with minimal code.  always #fetch latest documentation from https://typer.tiangolo.com/
-- if implementing a web api, use FastAPI as the framework. FastAPI is a high-performance api framework that allows you to build APIs quickly and efficiently with Python. Always fetch the latest documentation from https://fastapi.tiangolo.com/ 
+- if implementing a web api, use FastAPI as the framework. FastAPI is a high-performance api framework that allows you to build APIs quickly and efficiently with Python. Always #fetch the latest documentation from https://fastapi.tiangolo.com/ 
 - use pyproject.toml to specify project metadata and dependencies. This file should include information about the project, such as its name, version, and any required packages. 
 - use uv to manage dependencies and run the project. 
 - on uv make sure to exclude newer versions of dependencies for 30 days. Add this to the pyproject.toml file:
@@ -18,7 +17,7 @@ exclude-newer = "30 days"
 ```
 - Packages are a good way to organize code and manage dependencies. Avoid monolithic files and break down the code into smaller, more manageable modules. Avoid modules > 500 lines of code and use packages instead of prefixing modules with the same name.
 
-- use hatch when needed. Hatch is a modern Python project manager that provides a streamlined workflow for building, testing, and publishing Python packages. 
+- use hatch when needed. Hatch is a modern Python package manager that provides a streamlined workflow for building, testing, and publishing Python packages. 
 
 
 mandatory pyproject.toml sections:
