@@ -4,7 +4,7 @@ LABEL org.opencontainers.image.title="wallet-rest-cli"
 LABEL org.opencontainers.image.description="Console CLI for the BudgetBakers Wallet API"
 LABEL org.opencontainers.image.source=https://go.hugobatista.com/gh/wallet-rest-cli
 LABEL security.scan="true"
-LABEL maintainer="Hugo Batista <mail@hugobatista.com>"
+LABEL maintainer="Hugo Batista <code at hugobatista.com>"
 
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
