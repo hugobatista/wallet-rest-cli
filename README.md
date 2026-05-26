@@ -4,7 +4,7 @@
 [![Test](https://go.hugobatista.com/gh/wallet-rest-cli/actions/workflows/test.yml/badge.svg)](https://go.hugobatista.com/gh/wallet-rest-cli/actions/workflows/test.yml)
 [![Lint](https://go.hugobatista.com/gh/wallet-rest-cli/actions/workflows/lint.yml/badge.svg)](https://go.hugobatista.com/gh/wallet-rest-cli/actions/workflows/lint.yml)
 
-## wallet-rest-cli
+# wallet-rest-cli 💰
 
 `wallet-rest-cli` is a console CLI for the BudgetBakers Wallet API. Useful for debugging or provide a CLI for your AI Agents.
 
