@@ -3,10 +3,10 @@
 ## Dev commands
 
 ```bash
-uv sync --all-extras              # install all deps
-hatch run validate                 # lint → format-check → test → typecheck
-hatch run test                     # pytest with 100% coverage enforcement
-hatch run typecheck                # mypy src --strict --no-incremental
+uv sync                          # install all deps
+uv run hatch run validate          # lint → format-check → test → typecheck
+uv run hatch run test              # pytest with 100% coverage enforcement
+uv run hatch run typecheck         # mypy src --strict --no-incremental
 
 # run a single test
 uv run pytest tests/test_cli.py -v
@@ -15,7 +15,7 @@ uv run pytest tests/test_client.py::test_client_returns_json_payload -v
 
 ## CI notes
 
-- `lint.yml` runs `ruff check` + `black --check` (NOT the full lint hatch script which auto-fixes)
+- `lint.yml` runs `ruff check` + `ruff format --check` + `mypy` (NOT the full lint hatch script which auto-fixes)
 - `test.yml` runs `pytest --cov=src/wallet_rest_cli` (without `--cov-fail-under`)
 - The **full** validation pipeline (`hatch run validate`) is **not** run in CI -- run it locally before pushing
 - `validate.sh` is just `hatch run validate`
@@ -27,7 +27,7 @@ uv run pytest tests/test_client.py::test_client_returns_json_payload -v
 
 ## Style
 
-- black + ruff at **79 chars**
+- ruff (check + format) at **79 chars**
 - mypy: strict, `--no-incremental`, source only (excludes tests)
 
 ## Testing patterns

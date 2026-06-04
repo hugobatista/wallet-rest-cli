@@ -193,7 +193,7 @@ def normalize_account_type(account_type: str) -> str:
     if normalized is None:
         allowed_types = ", ".join(_ACCOUNT_TYPES.values())
         raise ValueError(
-            "Invalid account type. Allowed values are: " f"{allowed_types}."
+            f"Invalid account type. Allowed values are: {allowed_types}."
         )
 
     return normalized
