@@ -58,7 +58,7 @@ validate = ["lint", "format-check", "test", "typecheck"]
 check = ["lint-check", "format-check", "test", "typecheck"]
 
 [tool.pytest.ini_options]
-addopts = "-v --cov-report=term-missing"
+addopts = "-v --cov --cov-report=term-missing"
 pythonpath = ["src"]
 testpaths = ["tests"]
 
