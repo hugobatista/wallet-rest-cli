@@ -206,8 +206,6 @@ def test_validate_sort_by_rejects_empty_value() -> None:
 def test_records_by_id_params_join_ids_and_agent_hints() -> None:
     """Records-by-id parameters should include both IDs and hints."""
 
-    params = build_records_by_id_params(
-        record_ids=["a", "b"], agent_hints=True
-    )
+    params = build_records_by_id_params(record_ids=["a", "b"], agent_hints=True)
 
     assert params == [("agentHints", True), ("id", "a,b")]

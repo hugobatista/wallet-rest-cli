@@ -1,21 +1,25 @@
-
-*/__pycache__/*
-__pycache__
-.mypy_cache
-.pytest_cache
-.ruff_cache
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+*.egg-info/
+dist/
+build/
 .coverage
-dist
-build
-.venv
+coverage/
+coverage.xml
+htmlcov/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
 
+# Environment
+.env
 
 # Logs
 logs
 *.log
-dist
-dist-ssr
-*.local
 
 # Editor directories and files
 .vscode/*
@@ -28,8 +32,5 @@ dist-ssr
 *.sln
 *.sw?
 
-
-.env
+# Project-specific
 app.db
-
-

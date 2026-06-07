@@ -436,9 +436,7 @@ def standing_orders(
     limit: int = typer.Option(30, min=1, max=200, help="Items per page."),
     offset: int = typer.Option(0, min=0, help="Items to skip."),
     agent_hints: bool = typer.Option(False, "--agent-hints/--no-agent-hints"),
-    id_values: list[str] = typer.Option(
-        [], "--id", help="Standing order IDs."
-    ),
+    id_values: list[str] = typer.Option([], "--id", help="Standing order IDs."),
     name: str | None = typer.Option(None, help="Exact standing order name."),
     name_contains: str | None = typer.Option(
         None, help="Case-sensitive substring match for standing order name."

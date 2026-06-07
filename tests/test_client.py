@@ -14,8 +14,7 @@ def test_client_returns_json_payload() -> None:
     def handler(request: httpx.Request) -> httpx.Response:
         assert request.headers["Authorization"] == "Bearer test-token"
         assert (
-            str(request.url)
-            == "https://example.test/v1/api/categories?limit=1"
+            str(request.url) == "https://example.test/v1/api/categories?limit=1"
         )
         return httpx.Response(200, json={"categories": [{"id": "cat-1"}]})
 

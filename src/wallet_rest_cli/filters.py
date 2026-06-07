@@ -236,9 +236,7 @@ def validate_period(period: str) -> None:
         raise ValueError("Period cannot be empty.")
 
     suffix = (
-        period.removesuffix("days")
-        .removesuffix("weeks")
-        .removesuffix("months")
+        period.removesuffix("days").removesuffix("weeks").removesuffix("months")
     )
     if suffix == period:
         raise ValueError("Period must end with 'days', 'weeks', or 'months'.")
